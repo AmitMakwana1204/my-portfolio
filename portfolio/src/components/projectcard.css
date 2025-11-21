@@ -1,0 +1,138 @@
+/* ----------------------------------------------------
+   SUPER ADVANCED PROJECT CARD — NEON / GLASS / 3D (Amit🔥)
+----------------------------------------------------- */
+
+.p-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.3rem;
+  border-radius: 1.3rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px) saturate(150%);
+  -webkit-backdrop-filter: blur(14px) saturate(150%);
+  box-shadow:
+    0 12px 30px rgba(0,255,240,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+  transition: 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(0px);
+}
+
+/* Neon border on hover */
+.p-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(120deg, #00E1FF, #3B82F6, #9A4DFF, #00FFC8);
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.p-card:hover::before {
+  opacity: 1;
+}
+
+/* 3D Hover lift */
+.p-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 18px 50px rgba(0,240,255,0.25),
+    0 10px 28px rgba(155,77,255,0.18);
+}
+
+/* Image */
+.p-img-wrap {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.p-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  transition: 0.45s ease;
+}
+
+.p-card:hover .p-img {
+  transform: scale(1.08);
+}
+
+/* Title */
+.p-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 0.8rem;
+  color: #EAF8FF;
+}
+
+/* Description */
+.p-desc {
+  margin-top: 0.4rem;
+  font-size: 0.95rem;
+  color: rgba(230,245,255,0.75);
+  line-height: 1.5;
+}
+
+/* Tags */
+.p-tags {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.p-tag {
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  color: #00E1FF;
+  background: rgba(0,225,255,0.12);
+  border: 1px solid rgba(0,225,255,0.3);
+  box-shadow: 0 0 10px rgba(0,225,255,0.25);
+  transition: 0.25s ease;
+}
+
+/* Tag hover */
+.p-tag:hover {
+  background: rgba(0,225,255,0.28);
+  transform: translateY(-2px);
+}
+
+/* Buttons (Live / Code) */
+.p-links {
+  margin-top: 1.1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.p-btn {
+  padding: 0.45rem 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  border-radius: 0.6rem;
+  color: white;
+  background: linear-gradient(90deg, #00E1FF, #3B82F6, #9A4DFF);
+  text-decoration: none;
+  transition: 0.28s ease;
+  box-shadow: 0 0 12px rgba(0,225,255,0.25);
+}
+
+/* Button hover */
+.p-btn:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 20px rgba(0,225,255,0.5),
+    0 0 30px rgba(155,77,255,0.35);
+}

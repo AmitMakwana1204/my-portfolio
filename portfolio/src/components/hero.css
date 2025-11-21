@@ -1,0 +1,137 @@
+/* ------------------------------------------------------
+   SUPER ADVANCED HERO — Neon, Glow, Glass, Motion (Amit🔥)
+------------------------------------------------------- */
+
+#hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #050A1A, #020617);
+  overflow: hidden;
+}
+
+/* Floating glowing dots */
+.h-dot {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0.75;
+  animation: floaty 6s infinite ease-in-out;
+}
+
+.h-dot.one {
+  width: 220px; height: 220px;
+  top: -40px; left: -50px;
+  background: rgba(0,225,255,0.5);
+}
+
+.h-dot.two {
+  width: 260px; height: 260px;
+  bottom: -80px; right: -60px;
+  background: rgba(154,77,255,0.45);
+}
+
+.h-dot.three {
+  width: 180px; height: 180px;
+  top: 50%; left: 70%;
+  background: rgba(0,255,200,0.4);
+}
+
+/* Content Box */
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Title */
+.hero-title {
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #E0F7FF;
+  letter-spacing: -1px;
+  text-shadow: 0 0 28px rgba(0,240,255,0.25);
+}
+
+/* Glow effect */
+.glow {
+  background: linear-gradient(90deg, #00E1FF, #3B82F6, #9A4DFF);
+  background-clip: text;
+  color: transparent;
+}
+
+/* Role subtitle */
+.role {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+  color: #00FFC8;
+  text-shadow: 0 0 14px rgba(0,255,200,0.4);
+}
+
+/* Text paragraph */
+.hero-text {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+  color: rgba(230,245,255,0.85);
+  line-height: 1.7;
+}
+
+/* Buttons container */
+.hero-buttons {
+  margin-top: 2.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* Base Button */
+.btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Outline button */
+.btn.outline {
+  color: #00E1FF;
+  border: 2px solid rgba(0,225,255,0.4);
+  backdrop-filter: blur(8px);
+  background: rgba(255,255,255,0.03);
+}
+
+.btn.outline:hover {
+  background: rgba(0,225,255,0.08);
+  box-shadow: 0 0 22px rgba(0,225,255,0.5);
+  transform: translateY(-4px);
+}
+
+/* Fill button */
+.btn.fill {
+  background: linear-gradient(90deg, #00E1FF, #3B82F6, #9A4DFF);
+  color: white;
+  box-shadow: 0 0 15px rgba(0,225,255,0.2);
+}
+
+.btn.fill:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 30px rgba(0,225,255,0.45), 0 0 40px rgba(154,77,255,0.28);
+}
+
+/* Floating animation */
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0px); }
+}

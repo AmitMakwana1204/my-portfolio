@@ -1,0 +1,128 @@
+/* ----------------------------------------------------
+   SUPER ADVANCED FOOTER — NEON / GLASS / GLOW (Amit🔥)
+----------------------------------------------------- */
+
+#footer {
+  position: relative;
+  padding: 3.5rem 0;
+  background: linear-gradient(180deg, #050A1A, #020617);
+  color: #d9e6ff;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Glass Card Container */
+.footer-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    0 15px 60px rgba(0,225,255,0.08),
+    inset 0 0 0 1px rgba(255,255,255,0.08);
+  position: relative;
+  animation: fadeUp 0.9s ease-out forwards;
+  opacity: 0;
+}
+
+/* title */
+.footer-title {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00E1FF, #3B82F6, #9A4DFF);
+  background-clip: text;
+  color: transparent;
+}
+
+/* subtitle */
+.footer-sub {
+  margin-top: 0.4rem;
+  color: rgba(220,235,255,0.7);
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Social Section */
+.footer-social {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.footer-social .icon {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #00E1FF;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 0 12px rgba(0,225,255,0.1);
+  transition: 0.3s ease;
+}
+
+.footer-social .icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hover Glow */
+.footer-social .icon:hover {
+  transform: translateY(-6px) scale(1.12);
+  color: white;
+  background: linear-gradient(120deg, #00E1FF, #3B82F6, #9A4DFF);
+  box-shadow:
+    0 0 22px rgba(0,240,255,0.45),
+    0 0 32px rgba(155,77,255,0.45);
+}
+
+/* copyright */
+.footer-copy {
+  margin-top: 2rem;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+}
+
+/* floating neon dots */
+.f-dot {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(10px);
+  opacity: 0.8;
+  animation: floatDot 6s infinite ease-in-out;
+}
+
+.f-dot.one {
+  width: 20px; height: 20px;
+  top: 15%; left: 12%;
+  background: #00E1FF;
+}
+.f-dot.two {
+  width: 28px; height: 28px;
+  bottom: 18%; right: 10%;
+  background: #9A4DFF;
+}
+.f-dot.three {
+  width: 16px; height: 16px;
+  top: 65%; right: 20%;
+  background: #00FFC8;
+}
+
+/* Animation */
+@keyframes floatDot {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-16px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}

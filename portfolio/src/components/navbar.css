@@ -1,0 +1,100 @@
+/* ----------------------------------------------------
+   SUPER ADVANCED NAVBAR — NEON / GLASS / GLOW (Amit🔥)
+----------------------------------------------------- */
+
+#navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  background: rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 6px 20px rgba(0,240,255,0.05);
+  animation: fadeNav 0.9s ease-out;
+}
+
+/* Container */
+.nav-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0.9rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #EAF8FF;
+  letter-spacing: 0.5px;
+}
+
+.logo-glow {
+  background: linear-gradient(90deg, #00E1FF, #3B82F6, #9A4DFF);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 16px rgba(0,240,255,0.4);
+}
+
+/* Links Section */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+/* Link items */
+.nav-item {
+  position: relative;
+  font-weight: 500;
+  color: rgba(230,245,255,0.85);
+  transition: 0.32s ease;
+  letter-spacing: 0.5px;
+}
+
+/* Neon underline */
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00FFC8, #00E1FF, #3B82F6);
+  box-shadow: 0 0 12px rgba(0,225,255,0.4);
+  transition: width 0.35s ease;
+}
+
+/* Hover Effects */
+.nav-item:hover {
+  color: #00E1FF;
+  text-shadow: 0 0 12px rgba(0,240,255,0.4);
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Theme Toggle Button fixes */
+#navbar button {
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: #00E1FF;
+  transition: 0.2s;
+}
+
+#navbar button:hover {
+  background: rgba(0,225,255,0.1);
+  box-shadow: 0 0 16px rgba(0,225,255,0.4);
+}
+
+/* Fade Animation */
+@keyframes fadeNav {
+  0% { opacity: 0; transform: translateY(-12px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

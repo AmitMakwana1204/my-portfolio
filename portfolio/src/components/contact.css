@@ -1,0 +1,154 @@
+/* ------------------------------------------------------
+   CONTACT FORM — SUPER ADVANCED NEON + GLASS UI (Amit🔥)
+------------------------------------------------------- */
+
+#contact {
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(180deg, #020617, #050A1A);
+  overflow: hidden;
+}
+
+/* ---------- NEON BACKGROUND GLOW ---------- */
+#contact::before,
+#contact::after {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.45;
+}
+
+#contact::before {
+  top: -120px;
+  left: -140px;
+  background: #00E1FF;
+}
+
+#contact::after {
+  bottom: -140px;
+  right: -140px;
+  background: #9A4DFF;
+}
+
+/* ---------- Heading ---------- */
+#contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #E4F8FF;
+  letter-spacing: -0.03em;
+}
+
+#contact h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 0.8rem auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #00FFC8, #00E1FF, #3B82F6);
+  box-shadow: 0 0 24px rgba(0, 240, 255, 0.45);
+}
+
+/* ---------- Form Container (Glass Card) ---------- */
+#contact form {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  box-shadow:
+    0 20px 50px rgba(0,255,240,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* ---------- Input & Textarea Styling ---------- */
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 1rem;
+  color: #E9F9FF;
+  border-radius: 0.8rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  outline: none;
+  transition: all 0.25s ease;
+  caret-color: #00E1FF;
+}
+
+/* Placeholder color */
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+/* ---------- Input focus glow ---------- */
+#contact input:focus,
+#contact textarea:focus {
+  background: rgba(255,255,255,0.1);
+  border-color: #00E1FF;
+  box-shadow: 
+    0 0 10px rgba(0,225,255,0.4),
+    0 0 20px rgba(0,225,255,0.2);
+}
+
+/* ---------- Submit Button ---------- */
+#contact button {
+  background: linear-gradient(90deg, #00E1FF, #3B82F6, #9A4DFF);
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  color: white;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+  transition: all 0.4s ease;
+  box-shadow: 
+    0 0 20px rgba(0,255,240,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+/* Hover Glow */
+#contact button:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow:
+    0 10px 25px rgba(0,225,255,0.45),
+    0 0 34px rgba(155,77,255,0.45);
+}
+
+/* Click effect */
+#contact button:active {
+  transform: scale(0.96);
+  filter: brightness(0.95);
+}
+
+/* ---------- Floating Dots for Decoration ---------- */
+#contact .dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  filter: blur(8px);
+  opacity: 0.85;
+  animation: float-dot 6s infinite ease-in-out;
+}
+
+#contact .dot.one { background: #00FFC8; top: 30%; left: 5%; }
+#contact .dot.two { background: #00E1FF; top: 65%; right: 6%; }
+#contact .dot.three { background: #9A4DFF; bottom: 20%; left: 12%; }
+
+/* Animation */
+@keyframes float-dot {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-16px); }
+  100% { transform: translateY(0px); }
+}

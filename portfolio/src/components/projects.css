@@ -1,0 +1,106 @@
+/* -------------------------------------------------------
+   SUPER ADVANCED PROJECTS SECTION — NEON / GRID / GLOW
+-------------------------------------------------------- */
+
+#projects {
+  position: relative;
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #020617, #050A1A);
+  overflow: hidden;
+}
+
+/* floating background glows */
+.pr-dot {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.45;
+}
+
+.pr-dot.one {
+  width: 420px;
+  height: 420px;
+  top: -140px;
+  left: -120px;
+  background: #00e1ff;
+}
+
+.pr-dot.two {
+  width: 420px;
+  height: 420px;
+  bottom: -140px;
+  right: -120px;
+  background: #9a4dff;
+}
+
+/* container */
+.projects-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* title */
+.pr-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-align: center;
+  color: #e6faff;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #00e1ff, #3b82f6, #9a4dff);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2.5rem;
+}
+
+/* filter buttons */
+.pr-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 2.2rem;
+}
+
+.pr-filter-btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.8rem;
+  font-size: 0.9rem;
+  color: #bdeaff;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: 0.25s ease;
+}
+
+.pr-filter-btn:hover {
+  background: rgba(0,225,255,0.12);
+  color: #00e1ff;
+  box-shadow: 0 0 18px rgba(0,240,255,0.4);
+  transform: translateY(-4px);
+}
+
+.pr-filter-btn.active {
+  background: linear-gradient(90deg, #00e1ff, #3b82f6, #9a4dff);
+  color: white;
+  box-shadow: 0 0 25px rgba(0,240,255,0.45);
+  border-color: transparent;
+}
+
+/* grid */
+.pr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+  animation: fadeGrid 0.7s ease-out;
+}
+
+/* grid fade animation */
+@keyframes fadeGrid {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

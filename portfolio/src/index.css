@@ -1,0 +1,141 @@
+/* ------------------------------------------------------
+   TAILWIND BASE + PREMIUM CUSTOM GLOBAL STYLES (Amit🔥)
+------------------------------------------------------- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Root variables ---------- */
+:root {
+  --bg-dark: #020617;
+  --bg-light: #f9fbff;
+
+  --neon-1: #00E1FF;
+  --neon-2: #3B82F6;
+  --neon-3: #9A4DFF;
+  --aqua:   #00FFC8;
+
+  --text-light: #EAF8FF;
+  --text-dark: #0f172a;
+}
+
+/* ---------- Global Reset ---------- */
+html,
+body,
+#root {
+  height: 100%;
+  background: var(--bg-dark);
+  color: var(--text-light);
+  scroll-behavior: smooth;
+}
+
+/* smooth fade for Dark/Light toggle */
+html {
+  transition: background 0.4s ease, color 0.3s ease;
+}
+
+/* --------------- Neon Scrollbar Style --------------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--neon-1), var(--neon-3));
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,240,255,0.4);
+}
+
+/* --------------- Card Utility (Super Premium) --------------- */
+.card {
+  @apply rounded-2xl p-4 shadow-xl;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+
+  transition: 0.35s ease;
+}
+
+/* Glow border on hover */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 18px 40px rgba(0,240,255,0.20),
+    0 10px 20px rgba(155,77,255,0.20);
+}
+
+/* --------------- Gradient text utility --------------- */
+.neon-text {
+  background: linear-gradient(90deg, var(--neon-1), var(--neon-2), var(--neon-3));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* --------------- Soft container animation --------------- */
+.section-fade {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------- Link glow effect --------------- */
+a {
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: var(--neon-1);
+  text-shadow: 0 0 12px rgba(0,240,255,0.45);
+}
+
+/* --------------- Button global style --------------- */
+.btn-base {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: 0.35s ease;
+}
+
+/* neon fill button */
+.btn-fill {
+  background: linear-gradient(90deg, var(--neon-1), var(--neon-2), var(--neon-3));
+  color: white;
+  box-shadow: 0 0 12px rgba(0,240,255,0.25);
+}
+.btn-fill:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 0 30px rgba(0,240,255,0.45);
+}
+
+/* outline button */
+.btn-outline {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,240,255,0.4);
+  color: var(--neon-1);
+  backdrop-filter: blur(10px);
+}
+.btn-outline:hover {
+  box-shadow: 0 0 18px rgba(0,240,255,0.5);
+  transform: translateY(-4px);
+}
+
+/* --------------- Dark mode overrides --------------- */
+.dark body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.light body {
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
