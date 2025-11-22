@@ -1,0 +1,67 @@
+
+# 🌐 Amit Makwana — Portfolio
+
+Hi, I'm **Amit Makwana** 👋  
+**Frontend Engineer** passionate about building beautiful, fast, and interactive web experiences.  
+Specialized in **React, Vite, TailwindCSS & UI/UX engineering**.
+
+---
+
+## 🚀 Features
+- Responsive design for all devices
+- Neon-themed UI with smooth animations
+- Projects showcase with hover effects
+- Skills section with progress indicators
+- Contact form integration
+- Optimized for performance with Vite
+
+---
+
+## 🛠 Tech Stack
+- **React** — Component-based UI
+- **Vite** — Fast build tool
+- **TailwindCSS** — Utility-first styling
+- **Lucide Icons** — Modern icons
+- **Redux Toolkit** — State management
+- **Stripe API (Mock)** — Checkout UI
+
+---
+
+## 📂 Sections
+- **Hero** — Intro, Resume download, Contact button
+- **Projects** — Featured project: *Fashion Hub — E-Commerce Platform*
+- **About Me** — Who I am, what I do, and what I love
+- **Skills** — React, Tailwind, JavaScript, UI/UX
+- **Contact** — Name, Email, Message form
+
+---
+
+## 🖼 Featured Project
+### **Fashion Hub — E-Commerce Platform**
+A modern E-commerce store built using React + Vite.  
+Includes:
+- Product filters
+- Dynamic cart system
+- Login/Signup flow
+- Wishlist
+- Stripe mock checkout UI
+- Lazy-loading & smooth page transitions
+
+**Tech Used:** React, Vite, TailwindCSS, Redux Toolkit, Stripe API  
+https://your-live-link.com | https://github.com/AmitMakwana1204/Fashion-Hub
+
+---
+
+## ⚡ Installation & Setup
+```bash
+# Clone the repository
+git clone https://github.com/AmitMakwana1204/portfolio.git
+
+# Navigate to the project folder
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
