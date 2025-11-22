@@ -48,7 +48,7 @@ Includes:
 - Lazy-loading & smooth page transitions
 
 **Tech Used:** React, Vite, TailwindCSS, Redux Toolkit, Stripe API  
-[https://your-live-link.com](https://tangerine-basbousa-dfc6b4.netlify.app/) | https://github.com/AmitMakwana1204/Fashion-Hub
+[https://your-live-link.com](https://tangerine-basbousa-dfc6b4.netlify.app/) | [https://github.com/AmitMakwana1204/Fashion-Hub](https://github.com/AmitMakwana1204/men-fashion-hub)
 
 ---
 
