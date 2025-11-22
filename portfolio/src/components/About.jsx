@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Code2, Rocket, Star } from "lucide-react";
 import './about.css';
-import me from "../assets/me1.webp";
+import me from "../assets/me.jpg";
 
 export default function About() {
   return (

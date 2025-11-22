@@ -1,3 +1,4 @@
+
 /* -------------------------------------------------------
    SUPER ADVANCED PROJECTS SECTION — NEON / GRID / GLOW
 -------------------------------------------------------- */
@@ -15,6 +16,7 @@
   border-radius: 50%;
   filter: blur(100px);
   opacity: 0.45;
+  animation: floatGlow 12s infinite ease-in-out;
 }
 
 .pr-dot.one {
@@ -33,6 +35,13 @@
   background: #9a4dff;
 }
 
+/* glow animation */
+@keyframes floatGlow {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -20px); }
+  100% { transform: translate(0, 0); }
+}
+
 /* container */
 .projects-container {
   max-width: 1250px;
@@ -47,7 +56,6 @@
   font-size: 2.6rem;
   font-weight: 800;
   text-align: center;
-  color: #e6faff;
   letter-spacing: -1px;
   background: linear-gradient(90deg, #00e1ff, #3b82f6, #9a4dff);
   background-clip: text;
@@ -55,7 +63,7 @@
   margin-bottom: 2.5rem;
 }
 
-/* filter buttons */
+/* filter buttons (optional if you enable filters) */
 .pr-filters {
   display: flex;
   flex-wrap: wrap;
@@ -99,8 +107,23 @@
   animation: fadeGrid 0.7s ease-out;
 }
 
+/* center single project */
+.pr-grid.single {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* grid fade animation */
 @keyframes fadeGrid {
   0% { opacity: 0; transform: translateY(25px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+/* empty state */
+.no-projects {
+  text-align: center;
+  color: #bdeaff;
+  font-size: 1.2rem;
+  margin-top: 2rem;
 }
