@@ -51,17 +51,5 @@ Includes:
 [https://your-live-link.com](https://tangerine-basbousa-dfc6b4.netlify.app/) | [https://github.com/AmitMakwana1204/Fashion-Hub](https://github.com/AmitMakwana1204/men-fashion-hub)
 
 ---
-
-## ⚡ Installation & Setup
-```bash
-# Clone the repository
-git clone https://github.com/AmitMakwana1204/portfolio.git
-
-# Navigate to the project folder
-cd portfolio
-
-# Install dependencies
-npm install
-
 # Start development server
 npm run dev
