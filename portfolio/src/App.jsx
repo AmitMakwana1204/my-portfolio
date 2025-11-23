@@ -5,7 +5,7 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import "./app.css";
+import "./App.css";
 
 export default function App() {
   return (
