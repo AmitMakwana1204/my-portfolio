@@ -20,7 +20,7 @@ export default function Projects() {
       difficulty: "Advanced",
       image: pro1,
       techIcons: ["react", "vite", "tailwind"],
-      live: "https://musical-scone-fc1b82.netlify.app/",
+      live: "https://men-fashion-hub-h5p9.vercel.app/",
       repo: "https://github.com/AmitMakwana1204/men-fashion-hub",
       featured: true,
       year: 2024,
