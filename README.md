@@ -48,7 +48,7 @@ Includes:
 - Lazy-loading & smooth page transitions
 
 **Tech Used:** React, Vite, TailwindCSS, Redux Toolkit, Stripe API  
-[https://your-live-link.com](https://my-portfolio-4mkm.vercel.app/)] | [https://github.com/AmitMakwana1204/Fashion-Hub]https://github.com/AmitMakwana1204
+[https://your-live-link.com](https://my-portfolio-4mkm.vercel.app/)] | https://github.com/AmitMakwana1204
 ---
 # Start development server
 npm run dev
