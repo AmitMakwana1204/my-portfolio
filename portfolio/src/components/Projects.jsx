@@ -2,6 +2,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import pro1 from "../assets/project1.jpg";
+import pro2 from "../assets/project2.jpg";
 import "./projects.css";
 
 export default function Projects() {
@@ -22,6 +23,23 @@ export default function Projects() {
       techIcons: ["react", "vite", "tailwind"],
       live: "https://men-fashion-hub-h5p9.vercel.app/",
       repo: "https://github.com/AmitMakwana1204/men-fashion-hub",
+      featured: true,
+      year: 2024,
+      color: "#00E1FF",
+    },
+        {
+      id: "p2",
+      title: "Online Code Editor Platform",
+      short: "Complete Online-code-editor .",
+      desc:
+        "A modern Online-code-editor built using React + Vite. Includes HTML,CSS And Javascript LIVE Code And Live Output",
+      tags: ["React", "Vite", "HTML", "Javascript","CSS"],
+      category: "code-editor",
+      difficulty: "Advanced",
+      image: pro2,
+      techIcons: ["react", "vite", "tailwind"],
+      live: "https://amitmakwana1204.github.io/online-code-editor/",
+      repo: "https://github.com/AmitMakwana1204/online-code-editor",
       featured: true,
       year: 2024,
       color: "#00E1FF",
