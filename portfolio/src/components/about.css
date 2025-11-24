@@ -12,6 +12,17 @@
   overflow: visible;
 }
 
+/* Neon decorative dots */
+#about .accent-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #00E1FF, #00FFC8);
+  filter: blur(8px);
+  opacity: 0.8;
+}
+#about .accent-dot.one { top: 8%; left: 6%; width: 16px; height: 16px; }
+#about .accent-dot.two { bottom: 10%; right: 5%; width: 24px; height: 24px; }
+
 /* ---------- GLASS PROFILE GLOW (HYBRID NEON) ---------- */
 #about .profile-glow {
   position: relative;
@@ -25,7 +36,7 @@
 }
 
 /* Neon ambient glow */
-#about .profile-glow::before{
+#about .profile-glow::before {
   content: "";
   position: absolute;
   inset: -35px;
@@ -42,26 +53,38 @@
 }
 
 /* Frosted glass wrapper */
-#about .profile-glow .img-wrap{
+#about .profile-glow .img-wrap {
   border-radius: 1.2rem;
   overflow: hidden;
   background: rgba(255,255,255,0.06);
   backdrop-filter: blur(14px) saturate(180%);
   -webkit-backdrop-filter: blur(14px) saturate(180%);
+  position: relative;
 }
 
-/* Image hover effect */
-#about .profile-glow img{
+/* Image hover animation */
+#about .profile-glow img {
   display: block;
   width: 100%;
   object-fit: cover;
-  transition: transform 500ms cubic-bezier(.2,.9,.2,1), 
-              box-shadow 300ms;
+  transition: transform 500ms cubic-bezier(.2,.9,.2,1),
+              box-shadow 300ms ease;
 }
 
-#about .profile-glow:hover img{
+#about .profile-glow:hover img {
   transform: translateY(-10px) scale(1.04);
   box-shadow: 0 35px 70px rgba(0,255,200,0.25);
+}
+
+/* Floating animation */
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+#about .profile-glow.animate-float {
+  animation: floaty 5s ease-in-out infinite;
 }
 
 /* ---------- Heading Accent (PREMIUM GLOW STRIPE) ---------- */
@@ -70,7 +93,7 @@
   color: #E4F8FF;
 }
 
-#about h2::after{
+#about h2::after {
   content: "";
   display: block;
   width: 80px;
@@ -99,7 +122,9 @@
   color: #00E1FF;
 }
 
-/* ---------- SKILL BAR (ULTRA COLOR GRADIENT) ---------- */
+/* ---------------------------------------------------------
+   SKILL BAR (ULTRA GRADIENT + SHIMMER + ANIMATION)
+---------------------------------------------------------- */
 #about .skill {
   margin-bottom: 1rem;
   --skill-bg: rgba(255,255,255,0.09);
@@ -118,6 +143,7 @@
   border-radius: 999px;
   background: var(--skill-bg);
   overflow: hidden;
+  position: relative;
 }
 
 #about .skill .bar > .fill {
@@ -125,11 +151,14 @@
   height: 100%;
   background: var(--skill-fore);
   border-radius: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
   animation: fillGrow 1.3s cubic-bezier(.23,1,.32,1) forwards;
   box-shadow: 0 4px 22px rgba(0,255,240,0.35);
 }
 
-/* Shimmer effect */
+/* Shimmer highlight */
 #about .skill .bar > .fill::after {
   content: "";
   position: absolute;
@@ -141,31 +170,11 @@
     rgba(255,255,255,0.25) 100%
   );
   mix-blend-mode: overlay;
+  opacity: 0.6;
 }
 
-/* Fill animation */
+/* Grow animation */
 @keyframes fillGrow {
   0% { width: 0%; }
   100% { width: var(--target, 85%); }
-}
-
-/* ---------- Neon Accent Dots ---------- */
-#about .accent-dot {
-  position: absolute;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #00E1FF, #00FFC8);
-  filter: blur(8px);
-  opacity: 0.8;
-}
-#about .accent-dot.one { top: 8%; left: 6%; width: 16px; height: 16px; }
-#about .accent-dot.two { bottom: 10%; right: 5%; width: 24px; height: 24px; }
-
-/* ---------- Floating animation ---------- */
-@keyframes floaty {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-#about .profile-glow.animate-float {
-  animation: floaty 5s ease-in-out infinite;
 }

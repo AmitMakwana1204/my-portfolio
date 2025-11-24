@@ -1,14 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Code2, Rocket, Star } from "lucide-react";
-import './about.css';
+import "./about.css";
 import me from "../assets/me.jpg";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-slate-900 to-black text-white">
+    <section
+      id="about"
+      className="py-24 bg-gradient-to-b from-slate-900 to-black text-white"
+    >
       <div className="max-w-5xl mx-auto px-6">
-
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -26,8 +28,7 @@ export default function About() {
 
         {/* Card Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-          {/* Left — Image + Glow Card */}
+          {/* Left — Image */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -37,15 +38,11 @@ export default function About() {
             <div className="absolute inset-0 bg-cyan-500/20 blur-3xl rounded-3xl"></div>
 
             <div className="relative bg-white/10 backdrop-blur-xl p-1 rounded-3xl border border-white/10">
-              <img
-                src={me}
-                alt="Profile"
-                className="rounded-2xl object-cover"
-              />
+              <img src={me} alt="Profile" className="rounded-2xl object-cover" />
             </div>
           </motion.div>
 
-          {/* Right — Text + Icons */}
+          {/* Right — Text */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -60,10 +57,10 @@ export default function About() {
               I'm a{" "}
               <span className="text-cyan-400 font-medium">
                 Frontend Developer
-                </span>{" "}
+              </span>{" "}
               focused on building modern, beautiful & high-performance web
-              experiences.
-              I love clean UI, smooth animations, and pixel-perfect design.
+              experiences. I love clean UI, smooth animations, and
+              pixel-perfect design.
             </p>
 
             <ul className="mt-6 space-y-3">
@@ -98,6 +95,7 @@ export default function About() {
                     <span>{skill.name}</span>
                     <span className="text-cyan-400">{skill.value}</span>
                   </div>
+
                   <div className="w-full h-2 bg-slate-700 rounded-full">
                     <motion.div
                       initial={{ width: 0 }}
