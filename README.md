@@ -36,7 +36,7 @@ Specialized in **React, Vite, TailwindCSS & UI/UX engineering**.
 
 ---
 
-## 🖼 Featured Project
+## 🖼 First Project
 ### **Fashion Hub — E-Commerce Platform**
 A modern E-commerce store built using React + Vite.  
 Includes:
