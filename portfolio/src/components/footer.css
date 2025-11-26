@@ -1,11 +1,12 @@
 /* ----------------------------------------------------
    SUPER ADVANCED FOOTER — NEON / GLASS / GLOW (Amit🔥)
+   FIXED BACKGROUND VERSION
 ----------------------------------------------------- */
 
 #footer {
   position: relative;
   padding: 3.5rem 0;
-  background: linear-gradient(180deg, #050A1A, #020617);
+  background: transparent !important; /* 🔥 show global fixed background */
   color: #d9e6ff;
   text-align: center;
   overflow: hidden;
@@ -29,7 +30,7 @@
   opacity: 0;
 }
 
-/* title */
+/* Title */
 .footer-title {
   font-size: 2rem;
   font-weight: 800;
@@ -38,7 +39,7 @@
   color: transparent;
 }
 
-/* subtitle */
+/* Subtitle */
 .footer-sub {
   margin-top: 0.4rem;
   color: rgba(220,235,255,0.7);
@@ -82,7 +83,7 @@
     0 0 32px rgba(155,77,255,0.45);
 }
 
-/* copyright */
+/* Copyright */
 .footer-copy {
   margin-top: 2rem;
   color: rgba(255,255,255,0.55);
@@ -90,7 +91,7 @@
   letter-spacing: 0.4px;
 }
 
-/* floating neon dots */
+/* Floating neon dots */
 .f-dot {
   position: absolute;
   border-radius: 50%;
@@ -115,7 +116,7 @@
   background: #00FFC8;
 }
 
-/* Animation */
+/* Animations */
 @keyframes floatDot {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-16px); }

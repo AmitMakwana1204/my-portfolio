@@ -1,5 +1,6 @@
 /* ------------------------------------------------------
    SUPER ADVANCED HERO — Neon, Glow, Glass, Motion (Amit🔥)
+   FINAL FIXED BACKGROUND VERSION
 ------------------------------------------------------- */
 
 #hero {
@@ -9,8 +10,8 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 1rem;
-  background: linear-gradient(180deg, #050A1A, #020617);
-  overflow: hidden;
+  background: transparent !important;   /* 🔥 FIXED BG ENABLE */
+  overflow: visible;                    /* 🔥 FIX: no clipping */
 }
 
 /* Floating glowing dots */

@@ -16,7 +16,7 @@
   box-shadow:
     0 0 10px rgba(0,255,255,0.15),
     inset 0 1px 0 rgba(255,255,255,0.12);
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* Hover glow */
@@ -28,15 +28,21 @@
   border-color: rgba(0,240,255,0.4);
 }
 
+/* Click / active press effect */
+#theme-toggle:active {
+  transform: scale(0.95);
+  filter: brightness(0.9);
+}
+
 /* Icon wrapper */
 .toggle-icon {
   color: #00e1ff;
-  transition: transform 0.45s ease, color 0.35s ease;
   display: grid;
   place-items: center;
+  transition: transform 0.45s ease, color 0.35s ease, filter 0.35s ease;
 }
 
-/* Dark active → rotate and glow */
+/* Dark mode active → rotate and glow */
 .toggle-icon.dark-active {
   transform: rotate(180deg);
   color: #ffd86b;

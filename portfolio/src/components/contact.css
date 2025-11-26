@@ -1,13 +1,14 @@
 /* ------------------------------------------------------
    CONTACT FORM — SUPER ADVANCED NEON + GLASS UI (Amit🔥)
+   FIXED BACKGROUND VERSION
 ------------------------------------------------------- */
 
 #contact {
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: linear-gradient(180deg, #020617, #050A1A);
-  overflow: hidden;
+  background: transparent !important;    /* 🔥 FIX — allow global fixed BG */
+  overflow: visible;                     /* 🔥 FIX */
 }
 
 /* ---------- NEON BACKGROUND GLOW ---------- */
@@ -20,6 +21,7 @@
   border-radius: 50%;
   filter: blur(120px);
   opacity: 0.45;
+  z-index: -1;  /* 🔥 ensure glow behind content */
 }
 
 #contact::before {

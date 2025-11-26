@@ -1,13 +1,6 @@
-/* -----------------------------------------------------
-   SUPER ADVANCED PREMIUM COLOR THEME (Amit Edition 🚀)
------------------------------------------------------- */
-
-/* ---------- Section base (NEON DUAL GRADIENT) ---------- */
+/* ---------- SECTION BASE (TRANSPARENT + NEON DOTS) ---------- */
 #about {
-  background-image: 
-    radial-gradient(circle at 5% 10%, rgba(0,255,200,0.12), transparent 18%),
-    radial-gradient(circle at 90% 80%, rgba(0,225,255,0.10), transparent 25%),
-    linear-gradient(180deg, #050A1A, #020617);
+  background: transparent !important;
   position: relative;
   overflow: visible;
 }
@@ -23,15 +16,14 @@
 #about .accent-dot.one { top: 8%; left: 6%; width: 16px; height: 16px; }
 #about .accent-dot.two { bottom: 10%; right: 5%; width: 24px; height: 24px; }
 
-/* ---------- GLASS PROFILE GLOW (HYBRID NEON) ---------- */
+/* ---------- GLASS PROFILE GLOW (Hybrid Neon) ---------- */
 #about .profile-glow {
   position: relative;
   border-radius: 1.25rem;
   padding: 7px;
   background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-  box-shadow:
-    0 20px 40px rgba(0,255,255,0.12),
-    inset 0 1px 0 rgba(255,255,255,0.04);
+  box-shadow: 0 20px 40px rgba(0,255,255,0.12),
+              inset 0 1px 0 rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -52,47 +44,38 @@
   opacity: 0.95;
 }
 
-/* Frosted glass wrapper */
+/* Frosted glass */
 #about .profile-glow .img-wrap {
   border-radius: 1.2rem;
   overflow: hidden;
   background: rgba(255,255,255,0.06);
   backdrop-filter: blur(14px) saturate(180%);
-  -webkit-backdrop-filter: blur(14px) saturate(180%);
-  position: relative;
 }
 
-/* Image hover animation */
+/* Hover animation */
 #about .profile-glow img {
-  display: block;
   width: 100%;
-  object-fit: cover;
-  transition: transform 500ms cubic-bezier(.2,.9,.2,1),
-              box-shadow 300ms ease;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
-
 #about .profile-glow:hover img {
   transform: translateY(-10px) scale(1.04);
   box-shadow: 0 35px 70px rgba(0,255,200,0.25);
 }
 
-/* Floating animation */
 @keyframes floaty {
-  0% { transform: translateY(0px); }
+  0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  100% { transform: translateY(0); }
 }
-
 #about .profile-glow.animate-float {
   animation: floaty 5s ease-in-out infinite;
 }
 
-/* ---------- Heading Accent (PREMIUM GLOW STRIPE) ---------- */
+/* Heading */
 #about h2 {
-  letter-spacing: -0.02em;
   color: #E4F8FF;
+  letter-spacing: -0.02em;
 }
-
 #about h2::after {
   content: "";
   display: block;
@@ -100,21 +83,14 @@
   height: 5px;
   border-radius: 999px;
   margin-top: 0.8rem;
-  background: linear-gradient(
-    90deg, 
-    #00FFC8, 
-    #00E1FF, 
-    #3B82F6, 
-    #9A4DFF
-  );
+  background: linear-gradient(90deg, #00FFC8, #00E1FF, #3B82F6, #9A4DFF);
   box-shadow: 0 8px 25px rgba(0,240,255,0.45);
 }
 
-/* ---------- Feature List ---------- */
+/* Skills */
 #about ul li {
   color: rgba(235,245,255,0.92);
 }
-
 #about ul li svg {
   width: 1.4rem;
   height: 1.4rem;
@@ -122,21 +98,11 @@
   color: #00E1FF;
 }
 
-/* ---------------------------------------------------------
-   SKILL BAR (ULTRA GRADIENT + SHIMMER + ANIMATION)
----------------------------------------------------------- */
 #about .skill {
   margin-bottom: 1rem;
   --skill-bg: rgba(255,255,255,0.09);
-  --skill-fore: linear-gradient(
-    90deg,
-    #9A4DFF,
-    #3B82F6,
-    #00E1FF,
-    #00FFC8
-  );
+  --skill-fore: linear-gradient(90deg, #9A4DFF, #3B82F6, #00E1FF, #00FFC8);
 }
-
 #about .skill .bar {
   width: 100%;
   height: 12px;
@@ -145,35 +111,26 @@
   overflow: hidden;
   position: relative;
 }
-
 #about .skill .bar > .fill {
   width: 0%;
   height: 100%;
   background: var(--skill-fore);
   border-radius: inherit;
   position: absolute;
-  left: 0;
-  top: 0;
   animation: fillGrow 1.3s cubic-bezier(.23,1,.32,1) forwards;
-  box-shadow: 0 4px 22px rgba(0,255,240,0.35);
 }
-
-/* Shimmer highlight */
 #about .skill .bar > .fill::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    120deg, 
-    rgba(255,255,255,0.25) 0%, 
-    rgba(255,255,255,0.05) 45%, 
-    rgba(255,255,255,0.25) 100%
+    120deg,
+    rgba(255,255,255,0.25),
+    rgba(255,255,255,0.05) 45%,
+    rgba(255,255,255,0.25)
   );
-  mix-blend-mode: overlay;
   opacity: 0.6;
 }
-
-/* Grow animation */
 @keyframes fillGrow {
   0% { width: 0%; }
   100% { width: var(--target, 85%); }

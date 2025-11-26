@@ -21,9 +21,6 @@ export default function About() {
           <h2 className="text-4xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             About Me
           </h2>
-          <p className="mt-3 text-slate-300 text-lg">
-            Who I am, what I do, and what I love.
-          </p>
         </motion.div>
 
         {/* Card Layout */}
