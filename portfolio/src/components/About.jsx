@@ -68,7 +68,7 @@ export default function About() {
 
               <li className="flex items-center gap-3">
                 <Code2 className="w-5 h-5 text-cyan-400" />
-                <span>Skilled in React, Vite, TailwindCSS, JavaScript</span>
+                <span>Skilled in React, Vite, JavaScript</span>
               </li>
 
               <li className="flex items-center gap-3">
@@ -83,9 +83,8 @@ export default function About() {
 
               {[
                 { name: "React / Vite", value: "90%" },
-                { name: "Tailwind CSS", value: "85%" },
                 { name: "JavaScript", value: "80%" },
-                { name: "UI/UX & Animations", value: "88%" },
+                { name: "Django/python", value: "88%" },
               ].map((skill, i) => (
                 <div key={i} className="mb-4">
                   <div className="flex justify-between mb-1">
