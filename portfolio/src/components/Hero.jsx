@@ -37,7 +37,7 @@ export default function Hero() {
         >
           I build beautiful, fast and interactive web experiences.  
           <br />
-          Specialised in React, Vite, Tailwind & UI/UX engineering.
+          Specialised in React, Vite, Javascript.
         </motion.p>
 
         {/* Buttons */}

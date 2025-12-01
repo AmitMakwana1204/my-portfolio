@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./navbar.css";
-import ThemeToggle from "./ThemeToggle";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -36,7 +35,7 @@ export default function Navbar() {
           <a href="#projects" className="nav-item">Projects</a>
           <a href="#about" className="nav-item">About</a>
           <a href="#contact" className="nav-item">Contact</a>
-          <ThemeToggle />
+
         </div>
 
         {/* Mobile Menu Button */}
@@ -55,9 +54,7 @@ export default function Navbar() {
         <a href="#about" className="mobile-item" onClick={() => setMenuOpen(false)}>About</a>
         <a href="#contact" className="mobile-item" onClick={() => setMenuOpen(false)}>Contact</a>
         
-        <div className="mobile-toggle">
-          <ThemeToggle />
-        </div>
+
       </div>
     </nav>
   );

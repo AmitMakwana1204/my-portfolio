@@ -20,10 +20,21 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="footer-social">
-          <a href="#" className="icon"><Github /></a>
-          <a href="#" className="icon"><Linkedin /></a>
-          <a href="#" className="icon"><Instagram /></a>
-          <a href="#" className="icon"><Mail /></a>
+         <a href="https://github.com/AmitMakwana1204"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"><Github /></a>
+         <a href="https://www.linkedin.com/in/amit-makwana-ab397b397/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon">
+              <Linkedin /></a>
+
+         <a href="https://www.instagram.com/makwana__amit__1204/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon">
+            <Instagram /></a>
         </div>
 
         <p className="footer-copy">

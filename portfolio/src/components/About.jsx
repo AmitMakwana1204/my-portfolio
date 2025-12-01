@@ -57,8 +57,7 @@ export default function About() {
                 Frontend Developer
               </span>{" "}
               focused on building modern, beautiful & high-performance web
-              experiences. I love clean UI, smooth animations, and
-              pixel-perfect design.
+              experiences. 
             </p>
 
             <ul className="mt-6 space-y-3">
