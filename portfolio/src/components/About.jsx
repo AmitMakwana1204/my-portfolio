@@ -1,3 +1,4 @@
+
 import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Code2, Rocket, Star } from "lucide-react";
@@ -84,7 +85,7 @@ export default function About() {
               {[
                 { name: "React / Vite", value: "90%" },
                 { name: "JavaScript", value: "80%" },
-                { name: "Django/python", value: "88%" },
+                { name: "Django / Python", value: "88%" },
               ].map((skill, i) => (
                 <div key={i} className="mb-4">
                   <div className="flex justify-between mb-1">
